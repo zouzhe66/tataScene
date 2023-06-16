@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+}
+.g-template-page-input{
+    font-size: 26px;
+}
+.g-template-page-input .input-form{
+    width:400px;
+    height:380px;
+    border-radius:10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background-color:rgba(255,255,255,.7);
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left: -200px;
+    margin-top: -190px;
+    padding: 0 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.g-template-page-input .input-form .title{
+    line-height:100px;
+    color:#333;
+    text-align:center;
+    width:360px;
+}
+.g-template-page-input .input-form .title>div{
+    border-bottom: 1px solid #333;
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 40px;
+    font-weight: 900;
+}
+.g-template-page-input .input-form .input-div{
+    position:relative;
+    line-height:80px;
+    height:80px;
+    color:#666;
+    width:360px;
+    overflow:hidden;
+}
+.g-template-page-input .input-form .input-div.lst{
+    margin-top:20px;
+}
+.g-template-page-input .input-form .input-div .lf{
+    position:absolute;
+    left:0;
+    top:0;
+    width:80px;
+}
+.g-template-page-input .input-form .input-div .rg{
+    padding: 0 0 0 80px;
+    display: block;
+    height: 80px;
+    color: #333;
+    margin: 0;
+    line-height: 80px;
+    border: none;
+    width: 360px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+.g-template-page-input .input-form #ccBtn{
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 50px;
+    line-height: 60px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.g-template-page-input .btnc{
+    position:absolute;
+    bottom:20px;
+    width:216px;
+    height:59px;
+    left:50%;
+    margin-left:-108px;
+}

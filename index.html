@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tata木门</title>
+    <meta name="description" content="Tata木" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <!--核心类-->
+    <link rel="stylesheet" type="text/css" href="./scene/css/main.min.css?v=201608031265" />
+    <link rel="stylesheet" type="text/css" href="./scene/templates/css/main.min.css?v=201608031265" />
+
+    <!--模块类-->
+    <link rel="stylesheet" type="text/css" href="./css/goouuvideo.css?v=201608031265" />
+    <link rel="stylesheet" type="text/css" href="./css/goouudoorpage.css?v=201608031265" />
+    <link rel="stylesheet" type="text/css" href="./css/pageinput.css?v=201608031265" />
+</head>
+
+<body>
+</body>
+<script>
+    window.postUrl = "http://tata.xxsport.cc/upload.php";//提交接口
+    (function (w) {
+        var video1 = [];
+        for (var i = 1; i <= 105; i++) {
+            video1.push("http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/worman/v1/" + i + ".jpg");
+        }
+
+        var video2 = [];
+        for (var i = 1; i <= 142; i++) {
+            video2.push("http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/worman/v2/" + i + ".jpg");
+        }
+
+        w.sceneJson = {
+            "Status": 200,
+            "Data": [
+                {
+                    "Pages": [
+                        {
+                            "Imgs": [
+                                "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/1.jpg"
+                            ],
+                            "Texts": [],
+                            "PageTypeId": 2
+                        }, {
+                            "Imgs": ["http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/worman/v1/1.jpg"],
+                            "video": "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/worman/1.mp4",
+                            "poster": "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/worman/v1/1.jpg",
+                            "nextpage": 2,
+                            "width": 640,
+                            "height": 1008,
+                            "Texts": [],
+                            "PageTypeId": 1
+                        },
+                        {
+                            "Imgs": [
+                                "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/worman/bg.png",
+                                "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/2-1.png",
+                                "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/2-2.png",
+                                "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/2-3.jpg"
+                            ],
+                            "nextpage": 3,
+                            "audioindex": 2,
+                            "Texts": [],
+                            "PageTypeId": 3
+                        },
+                        {
+                            "Imgs": ["http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/worman/v2/1.jpg"],
+                            "video": "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/worman/2.mp4",
+                            "poster": "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/worman/v2/1.jpg",
+                            "nextpage": 4,
+                            "width": 640,
+                            "height": 1008,
+                            "Texts": [],
+                            "PageTypeId": 1
+                        },
+                        {
+                            "Imgs": [
+                                "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/3-1.jpg",
+                                "http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/3-2.png"
+                            ],
+                            "Texts": [],
+                            "PageTypeId": 4
+                        }
+                    ],
+                    "VideoUrl": "1.mp3",
+                    "neednotplay": 1
+                }
+            ],
+            "HasNotLastPage": !0,
+            "isDebug": !!0,
+            "Message": null
+        };
+    })(window);
+</script>
+<!--核心类-->
+<script src="./scene/js/main.min.js?v=201608031265"></script>
+<script src="./scene/templates/js/main.min.js?v=201608031265"></script>
+<script src="./config.js?v=201608031265"></script>
+<!--模块类-->
+<script src="./js/goouuvideo.js?v=201608031265"></script>
+<script src="./js/singlepage1.js?v=201608031265"></script>
+<script src="./js/page3.js?v=201608031265"></script>
+<script src="./js/pageinput.js?v=201608031265"></script>
+
+<audio id="closeDoor" src="http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/closedoor.mp3">
+    <source src="http://cdnbjsource.oss-cn-beijing.aliyuncs.com/test/closedoor.mp3">
+</audio>
+
+</html>

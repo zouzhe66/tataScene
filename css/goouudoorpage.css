@@ -1,0 +1,57 @@
+.g-template-doorpage{
+    position:relative;
+}
+.g-template-doorpage .closedoor,.g-template-doorpage .closedoor-point,.g-template-doorpage .opendoor{
+    position:absolute;
+}
+.g-template-doorpage .closedoor{
+    width: 157px;
+    height: 396px;
+    left: 50%;
+    top: 50%;
+    margin-top: -198px;
+    margin-left: -78px;
+}
+.g-template-doorpage .closedoor-point{
+    cursor: pointer;
+    width: 79px;
+    height: 109px;
+    left: 50%;
+    top: 60%;
+    margin-left: -40px;
+    -webkit-animation: ceme 2s linear infinite;
+    animation: ceme 2s linear infinite;
+    z-index:10;
+}
+.g-template-doorpage .wordd{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    margin-top: 109px;
+    color: #fff;
+    line-height: 50px;
+    font-size: 26px;
+}
+.g-template-doorpage .opendoor{
+    width: 157px;
+    height: 396px;
+    left: 50%;
+    top: 50%;
+    margin-top: -198px;
+    margin-left: -78px;
+    opacity: 0;
+}
+.g-template-doorpage .doorbk{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.74);
+    display:none;
+}
+
+
+@keyframes ceme{0%{transform: scale(.75)}50%{transform: scale(1)}100%{transform: scale(.75)}}
+@-webkit-keyframes ceme{0%{-webkit-transform: scale(.75)}50%{-webkit-transform: scale(1)}100%{-webkit-transform: scale(.75)}}
+@-moz-keyframes ceme{0%{-webkit-transform: scale(.75)}50%{-webkit-transform: scale(1)}100%{-webkit-transform: scale(.75)}}
